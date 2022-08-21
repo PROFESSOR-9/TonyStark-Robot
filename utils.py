@@ -9,6 +9,7 @@ from typing import Union
 import re
 import os
 from datetime import datetime
+from database.users_chats_db import db
 from typing import List
 from bs4 import BeautifulSoup
 import requests
