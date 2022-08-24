@@ -2,6 +2,8 @@ import os
 import logging
 import random
 import asyncio
+import datetime
+import pytz
 from translation import script
 from pyrogram import Client, filters, enums
 from pyrogram.errors import ChatAdminRequired, FloodWait
@@ -54,6 +56,18 @@ async def start(client, message):
         m=await message.reply_sticker("CAACAgUAAxkBAAEFgtBi8kasH1iGveTT-HI1ccUbk99fOQACFQEAAsiUZBRmRDCipxVsEykE") 
         await asyncio.sleep(1)
         await m.delete()
+        now=datetime.datetime.now()
+        tz=pytz.timezone('Asia/Kolkata')
+        yn=now.astimezone(tz)
+        hour=yn.hour
+        if hour < 12:
+          greeting="Good Morning"
+        elif hour < 15:
+          greeting="Good Afternoon"
+        elif hour < 20:
+          greeting="Good Evening"
+        else:
+          greeting="Good Night"
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
