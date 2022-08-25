@@ -1,6 +1,8 @@
 class script(object):
     START_TXT = """<i><b>👋 Hello {} {},
-It's Power Full [{}](t.me/{}) Here 😎
+
+It's Power Full <a href="https://t.me/{}">{}</a> Here 😎
+
 Add Me To Your Group And Make Sure I'm an Admin There..!
 And Enjoy My Pever Show..!! 🤪</i></b>"""
     
