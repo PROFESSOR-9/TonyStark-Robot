@@ -412,7 +412,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
         ], [
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton(text='😊 About', callback_data='crpf')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         now=datetime.datetime.now()
@@ -432,6 +432,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+    elif "crpf" in query.data:
+        return await query.answer("""
+꧁֍TONY STARK BOT֍꧂
+
+🤴 Creator: TG Dragon
+❖ Language: Python3
+❖ Hosted: Heroku 
+❖ Version: 1.0.1 [BETA]
+❖ Farmework: Pyrogram
+❖ Database: MongoDB
+֎ Bot: Indian 🇮🇳
+""", show_alert=True)
+
         await query.answer('Piracy Is Crime')
     elif query.data == "help":
         buttons = [[
