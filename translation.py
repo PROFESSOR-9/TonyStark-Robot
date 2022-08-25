@@ -10,6 +10,13 @@ For More Information Click ℹ️ Help</i></b>"""
     HELP_TXT = """<i><b>𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂.</i></b>"""
 
+    SPELLMODE_MESSAGE = """
+**__Hello 👋 {mention}**__
+**__Couldn't Find {query} ?  Please Click Your Request Name**__"""
+
+    REQUEST_MESSAGE = """
+**Requested By:** {mention}\n**Requested Name:** {query}\n™ {group_name}"""
+    
     SOURCE_TXT = """<b>NOTE:</b>
 - Eva Maria is a open source project. 
 - Source - https://github.com/EvamariaTG/EvaMaria  
