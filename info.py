@@ -1,5 +1,6 @@
 import re
 from os import environ
+from .translation import SPELLMODE_MESSAGE, REQUEST_MESSAGE
 
 id_pattern = re.compile(r'^.\d+$')
 def is_enabled(value, default):
