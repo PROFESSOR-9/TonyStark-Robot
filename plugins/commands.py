@@ -50,7 +50,7 @@ async def start(client, message):
             InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton(text='😊 About', callback_data='crpf')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgUAAxkBAAEFgtBi8kasH1iGveTT-HI1ccUbk99fOQACFQEAAsiUZBRmRDCipxVsEykE") 
@@ -111,7 +111,7 @@ async def start(client, message):
             InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton(text='😊 About', callback_data='crpf')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgUAAxkBAAEFgtBi8kasH1iGveTT-HI1ccUbk99fOQACFQEAAsiUZBRmRDCipxVsEykE") 
