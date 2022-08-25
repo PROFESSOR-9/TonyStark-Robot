@@ -2,9 +2,10 @@ class script(object):
     START_TXT = """<i><b>👋 Hello {} {},
 
 It's Power Full <a href="https://t.me/{}">{}</a> Here 😎
-
 Add Me To Your Group And Make Sure I'm an Admin There..!
-And Enjoy My Pever Show..!! 🤪</i></b>"""
+And Enjoy My Pever Show..!! 🤪
+
+For More Information Click ℹ️ Help</i></b>"""    
     
     HELP_TXT = """<i><b>𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂.</i></b>"""
